@@ -10,6 +10,7 @@ body {
   background-image: url(../img/main-bg.png);
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: 100%;
 }
 a,
 input,
@@ -285,6 +286,9 @@ button {
 }
 
 @media (max-width: 1200px) {
+  body {
+    background-size: auto;
+  }
   .container {
     max-width: 960px;
   }
