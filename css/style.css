@@ -241,7 +241,10 @@ button {
   color: #ff8f27;
 }
 .tabs__item:not(:last-child) {
-  margin-right: 35px;
+  margin-right: 40px;
+}
+.tabs__item:nth-child(7) {
+  margin-right: 55px;
 }
 .bookmark-added {
   vertical-align: middle;
@@ -272,6 +275,7 @@ button {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  max-width: 175px;
 }
 .subscribe-button {
   padding: 12px;
