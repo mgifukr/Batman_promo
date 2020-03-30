@@ -21,20 +21,20 @@
    <div class="container">
       <header class="header">
          <!-- !шапка сайта с логотипои , поиском и т.д. -->
-         <div class="logo">КиноПульс</div>
-         <form action="#" class="search">
+         <div class="header__logo">КиноПульс</div>
+         <form action="#" class="header__search search">
             <input class="search__input" type="text" placeholder="Фильмы, сериалы, актеры">
             <button class="search__button" type="submit"><img src="./img/search.svg" alt="search-icon"></button>
          </form>
-         <div class="user">
-            <button class="bookmark"><img src="./img/bookmark.svg" alt="bookmark-icon"></button>
-            <img src="./img/gordon.png" alt="avatar" class="avatar">
+         <div class="header__user user">
+            <button class="user__bookmark"><img src="./img/bookmark.svg" alt="bookmark-icon"></button>
+            <img src="./img/gordon.png" alt="avatar" class="user__avatar">
          </div>
       </header>
       <main class="main">
          <h1 class="main__title animated fadeInRight delay-1s">Бэтмен</h1>
-         <small class="main__title-en animated fadeInRight delay-1s">The Batman</small>
-         <div class="info animated fadeInUp delay-2s">
+         <small class="main__title-en animated fadeInRight delay-1s ">The Batman</small>
+         <div class="main__info info animated fadeInUp delay-2s">
             <div class="info__movie">
                <span class="info__tag">Фильм</span>
                <span class="info__country">США, 2021 год</span>
@@ -43,11 +43,11 @@
             <a href="#" class="info__more">Подробнее</a>
          </div>
          <div class="main__content">
-            <div class="main__short">
-               <img src="./img/poster.jpg" alt="poster" class="poster">
-               <button class="button">Буду смотреть</button>
-               <h3 class="actors-title">В главных ролях:</h3>
-               <ul class="actors-list">
+            <div class="content-short">
+               <img src="./img/poster.jpg" alt="poster" class="content-short__poster">
+               <button class="content-short__button button">Буду смотреть</button>
+               <h3 class="content-short__actors-title">В главных ролях:</h3>
+               <ul class="content-short__actors-list actors-list">
                   <li class="actors-list__item">Роберт Паттинсон</li>
                   <li class="actors-list__item">Зои Кравиц</li>
                   <li class="actors-list__item">Колин Фаррелл</li>
@@ -60,9 +60,10 @@
                   <li class="actors-list__item">Кон О’Нилл</li>
                </ul>
             </div>
-            <!-- /.main__short -->
-            <div class="main__full">
-               <nav class="tabs">
+            <!-- /.content-short -->
+
+            <div class="content-full">
+               <nav class="content-full__tabs tabs">
                   <a href="#about" class="tabs__item tabs__item-active">Описание</a>
                   <a href="#rewievs" class="tabs__item">Рецензии</a>
                   <a href="#premieres" class="tabs__item">Премьеры</a>
@@ -73,8 +74,8 @@
                   <a href="#bookmark" class="tabs__item bookmark"><img src="./img/bookmark-icon.svg" alt="bookmark"
                         class="bookmark-added"></a>
                </nav>
-               <div class="full-content">
-                  <div class="tabs-content visible" id="about">
+               <div class="content-full__basis basis">
+                  <div class="basis__tabs-content visible" id="about">
                      <p class="text">Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах
                         издательства DC Comics. Картина будет выпущена компанией Warner Bros. и будет перезагрузкой всех
                         фильмов о Бэтмене.</p>
@@ -96,36 +97,109 @@
                         года Джефф Джонс подтвердил, что Джо Манганьелло сыграет наёмника Слейда Уилсона, который,
                         возможно, станет главным злодеем фильма.</p>
                   </div>
-                  <div class="tabs-content" id="rewievs">
+                  <div class="basis__tabs-content" id="rewievs">
                      <p class="text">Здесь скоро будут рецензии</p>
                   </div>
-                  <div class="tabs-content" id="premieres">
-                     <p class="text">Здесь скоро будут премьеры</p>
+                  <div class="basis__tabs-content" id="premieres">
+                     <h4>Премьеры The Batman, 2021
+                     </h4>
+                     <div class="country">
+                        <div class="country__flag"><img src="./img/flags/ar.png" alt="" class="country__image"></div>
+                        <p class="country__date text">24 июня 2021</p>
+                        <p class="country__text text">Аргентина</p>
+                     </div>
+                     <div class="country">
+                        <div class="country__flag"><img src="./img/flags/ru.png" alt="" class="country__image"></div>
+                        <p class="country__date text">24 июня 2021</p>
+                        <p class="country__text text">Россия</p>
+                     </div>
+                     <div class="country">
+                        <div class="country__flag"><img src="./img/flags/sk.png" alt="" class="country__image"></div>
+                        <p class="country__date text">24 июня 2021</p>
+                        <p class="country__text text">Словакия</p>
+                     </div>
+                     <div class="country">
+                        <div class="country__flag"><img src="./img/flags/vi.png" alt="" class="country__image"></div>
+                        <p class="country__date text">25 июня 2021</p>
+                        <p class="country__text text">Виргинские острова</p>
+                     </div>
+                     <div class="country">
+                        <div class="country__flag"><img src="./img/flags/be.png" alt="" class="country__image"></div>
+                        <p class="country__date text">25 июня 2021</p>
+                        <p class="country__text text">Бельгия</p>
+                     </div>
+                     <div class="country">
+                        <div class="country__flag"><img src="./img/flags/br.png" alt="" class="country__image"></div>
+                        <p class="country__date text">25 июня 2021</p>
+                        <p class="country__text text">Бразилия</p>
+                     </div>
+                     <div class="country">
+                        <div class="country__flag"><img src="./img/flags/gb.png" alt="" class="country__image"></div>
+                        <p class="country__date text">25 июня 2021</p>
+                        <p class="country__text text">Великобритания</p>
+                     </div>
+                     <div class="country">
+                        <div class="country__flag"><img src="./img/flags/ca.png" alt="" class="country__image"></div>
+                        <p class="country__date text">25 июня 2021</p>
+                        <p class="country__text text">Канада</p>
+                     </div>
+                     <div class="country">
+                        <div class="country__flag"><img src="./img/flags/lt.png" alt="" class="country__image"></div>
+                        <p class="country__date text">25 июня 2021</p>
+                        <p class="country__text text">Литва</p>
+                     </div>
+                     <div class="country">
+                        <div class="country__flag"><img src="./img/flags/pt.png" alt="" class="country__image"></div>
+                        <p class="country__date text">25 июня 2021</p>
+                        <p class="country__text text">Португалия</p>
+                     </div>
+                     <div class="country">
+                        <div class="country__flag"><img src="./img/flags/us.png" alt="" class="country__image"></div>
+                        <p class="country__date text">25 июня 2021</p>
+                        <p class="country__text text">США</p>
+                     </div>
+                     <div class="country">
+                        <div class="country__flag"><img src="./img/flags/tr.png" alt="" class="country__image"></div>
+                        <p class="country__date text">25 июня 2021</p>
+                        <p class="country__text text">Турция</p>
+                     </div>
+                     <div class="country">
+                        <div class="country__flag"><img src="./img/flags/jp.png" alt="" class="country__image"></div>
+                        <p class="country__date text">26 июня 2021</p>
+                        <p class="country__text text">Япония</p>
+                     </div>
+                     <div class="country">
+                        <div class="country__flag"><img src="./img/flags/fr.png" alt="" class="country__image"></div>
+                        <p class="country__date text">30 июня 2021</p>
+                        <p class="country__text text">Франция</p>
+                     </div>
+
+
                   </div>
-                  <div class="tabs-content" id="actors">
+                  <div class="basis__tabs-content" id="actors">
                      <p class="text">Здесь скоро будут актеры</p>
                   </div>
-                  <div class="tabs-content" id="awards">
+                  <div class="basis__tabs-content" id="awards">
                      <p class="text">Здесь скоро будут награды</p>
                   </div>
-                  <div class="tabs-content" id="facts">
+                  <div class="basis__tabs-content" id="facts">
                      <p class="text">Здесь скоро будут факты</p>
                   </div>
-                  <div class="tabs-content" id="sites">
+                  <div class="basis__tabs-content" id="sites">
                      <p class="text">Здесь скоро будут сайты</p>
                   </div>
-                  <div class="tabs-content" id="bookmark">
+                  <div class="basis__tabs-content" id="bookmark">
                      <p class="text">Здесь скоро будут закладки</p>
                   </div>
-                  <div class="tabs-subscribe">
-                     <h3 class="subscribe-title">Подпишитесь на обновления</h3>
+                  <div class="basis__tabs-subscribe subscribe">
+                     <h3 class="subscribe__title">Подпишитесь на обновления</h3>
                      <!-- !форма -->
-                     <form action="#" class="subscribe-form">
-                        <input type="text" class="subscribe-input" placeholder="Ваш Email">
-                        <button class="subscribe-button"><img src="./img/check.svg" alt="check"></button>
+                     <form action="#" class="subscribe__form">
+                        <input type="text" class="subscribe__form-input" placeholder="Ваш Email">
+                        <button class="subscribe__form-button"><img src="./img/check.svg" alt="check"></button>
                      </form>
                      <!-- !рекламный баннер -->
-                     <a href="#" class="banner">
+                     <a href="#" class="subscribe__banner">
                         <img src="./img/image 1.jpg" alt="banner">
                      </a>
                   </div>
