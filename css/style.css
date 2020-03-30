@@ -193,6 +193,7 @@ button {
   display: block;
   margin-top: -80px;
   margin-bottom: 19px;
+  width: 80%;
 }
 .button {
   font-size: 14px;
@@ -302,6 +303,9 @@ button {
 .country__date {
   margin-right: 50px;
 }
+.country__text {
+  text-decoration: underline;
+}
 @media (max-width: 1200px) {
   body {
     background-size: auto;
@@ -317,6 +321,7 @@ button {
   }
   .content-short__poster {
     margin-top: -50px;
+    width: 184px;
   }
   .basis__tabs-content {
     margin-right: 10px;
